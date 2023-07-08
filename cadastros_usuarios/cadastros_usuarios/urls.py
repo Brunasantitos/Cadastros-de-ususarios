@@ -6,7 +6,7 @@ urlpatterns = [
 
     # rota, view responsável, nome de referência
     # se vc quiser somente o link do site (facebook.com)
-    path(''), #somente pagina inicial
+    path('',views.home,name='home'), #somente pagina inicial
     # link mais detalhado
     #path('devaprender/')
 ]
