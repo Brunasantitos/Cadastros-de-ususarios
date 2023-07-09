@@ -18,14 +18,15 @@
         <span class="navbar-brand mb-0 h1">Cadastre-se!</span>
         </div>
     </nav>
-    <div class="container">
-        <h1>Cadastro de Usuários</h1>
-        Nome<input type="text">
-        Idade<input type="text">
-        <button>Enviar</button>
-
+    <form action="{% url 'listagem_usuarios' %}" method="post">
+        <div style="text-align: center;" class="container">
+            <h1>Cadastro de Usuários</h1>
+            Nome <input name="nome" class="form-control-sm" type="text">
+            Idade <input name="idade" class="form-control-sm" type="text">
+            <button class="form-control-sm">Enviar</button>
+        </div>
+    </form>
     
-    </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->

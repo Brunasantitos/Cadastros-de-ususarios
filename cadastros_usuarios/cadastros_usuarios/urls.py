@@ -9,4 +9,5 @@ urlpatterns = [
     path('',views.home,name='home'), #somente pagina inicial
     # link mais detalhado
     #path('devaprender/')
+    path('usuarios/',views.usuarios,name='listagem_usuarios')
 ]
